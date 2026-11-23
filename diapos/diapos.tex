@@ -7,6 +7,18 @@
 % asi en \includegraphics no hay que escribir "../imagenes/" cada vez
 \graphicspath{{../imagenes/}}
 
+% recuadro que reserva el lugar de una imagen que todavia no existe
+% cuando exista, reemplazar \imagenplaceholder por:
+%   \includegraphics[width=\linewidth,height=0.6\textheight,keepaspectratio]{archivo.png}
+\newcommand{\imagenplaceholder}{%
+  \begingroup
+  \setlength{\fboxsep}{0pt}%
+  \fcolorbox{compuacento}{compulinea}{%
+    \parbox[c][0.55\textheight][c]{\dimexpr\linewidth-2\fboxrule\relax}{%
+      \centering\textcolor{compusecundario}{imagen}}}%
+  \endgroup
+}
+
 \title{Popusintesíntesis}
 \subtitle{Presentación candidatura de doctorado}
 \author{Aarón Montoya Moraga}
@@ -66,6 +78,68 @@
       \item Segunda iteración (junio 2026): estéreo, chip PAM8403D.
     \end{itemize}
   \end{minipage}
+\end{frame}
+
+\begin{frame}{Módulo Chufebu rev-b}
+  \begin{columns}[c,onlytextwidth]
+    \column{0.46\textwidth}
+      Placeholder.
+    \column{0.48\textwidth}
+      \centering
+      \imagenplaceholder
+  \end{columns}
+\end{frame}
+
+\begin{frame}{Módulo Chufe rev-b}
+  \begin{columns}[c,onlytextwidth]
+    \column{0.46\textwidth}
+      Módulo de alimentación de Chufebu.
+
+      Placeholder.
+    \column{0.48\textwidth}
+      \centering
+      \imagenplaceholder
+  \end{columns}
+\end{frame}
+
+\begin{frame}{Módulo Tacto48 rev-c}
+  \begin{columns}[c,onlytextwidth]
+    \column{0.46\textwidth}
+      Placeholder.
+    \column{0.48\textwidth}
+      \centering
+      \imagenplaceholder
+  \end{columns}
+\end{frame}
+
+\begin{frame}{Módulo Atenu rev-b}
+  \begin{columns}[c,onlytextwidth]
+    \column{0.46\textwidth}
+      Placeholder.
+    \column{0.48\textwidth}
+      \centering
+      \imagenplaceholder
+  \end{columns}
+\end{frame}
+
+\begin{frame}{Módulo Frambu rev-a}
+  \begin{columns}[c,onlytextwidth]
+    \column{0.46\textwidth}
+      Placeholder.
+    \column{0.48\textwidth}
+      \centering
+      \imagenplaceholder
+  \end{columns}
+\end{frame}
+
+\begin{frame}{Módulo Suma rev-b}
+  \begin{columns}[c,onlytextwidth]
+    \column{0.46\textwidth}
+      Placeholder.
+    \column{0.48\textwidth}
+      \centering
+      \imagenplaceholder
+  \end{columns}
 \end{frame}
 
 \section{Resultados esperados}
